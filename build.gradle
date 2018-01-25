@@ -1,0 +1,13 @@
+apply plugin: "java"
+apply plugin: "jacoco"
+apply plugin: "application"
+
+repositories {
+    mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+   gradleVersion = '4.3.1'
+}
+
+mainClassName = "com.goetschalckx.eric.uuid.Application"
